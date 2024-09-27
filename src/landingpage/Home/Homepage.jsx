@@ -1,10 +1,12 @@
 import React from 'react';
+import FitnessFacts from './FitnessFacts';
+import HeroSection from './Herosection';
 
 function Homepage() {
     return (
         <div>
-            <h1>Homepage</h1>
-            <p>Welcome to our website</p>
+            <HeroSection />
+            <FitnessFacts />
         </div>
     );
 }
