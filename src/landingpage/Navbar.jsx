@@ -80,12 +80,13 @@ function Navbar() {
 
                     {/* Buttons for location and contacts */}
                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center' }}>
-                        <Button style={{ background: "none", color: "white", border: "2px solid white" }}>
+                        <a href="https://maps.app.goo.gl/WRWBTPThM8GyVS316" target='_blank'> <Button style={{ background: "none", color: "white", border: "2px solid white" }}>
                             Bangalore<LocationOnIcon style={{ color: "white" }} className='btn-lg' />
-                        </Button>
-                        <Button style={{ background: "#ff6d00", color: "black", border: "2px solid #ff6d00" }} className='btn-lg ms-3'>
-                            Contacts
-                        </Button>
+                        </Button></a>
+                        <a href="https://wa.me/9740927418" target='_blank'>
+                            <Button style={{ background: "#ff6d00", color: "black", border: "2px solid #ff6d00" }} className='btn-lg ms-3'>
+                                Contacts
+                            </Button></a>
                     </Box>
 
                     {/* Dropdown menu for mobile view */}
@@ -96,9 +97,9 @@ function Navbar() {
                                 <MenuItem onClick={handleHomeClick}>  Home</MenuItem>
                                 <MenuItem onClick={handleMembershipClick}>Mebership</MenuItem>
                                 <MenuItem onClick={handleAboutClick}>About</MenuItem>
-                                <MenuItem><Button style={{ background: "none", color: "gray", border: "2px solid white" }}>
+                                <MenuItem> <a href="https://g.co/kgs/gLsPnF1"><Button style={{ background: "none", color: "gray", border: "2px solid white" }}>
                                     Bangalore<LocationOnIcon style={{ color: "white" }} className='btn-lg' />
-                                </Button><Button style={{ background: "#ff6d00", color: "black", border: "2px solid #ff6d00" }} className='btn-lg ms-3'>
+                                </Button></a> <Button style={{ background: "#ff6d00", color: "black", border: "2px solid #ff6d00" }} className='btn-lg ms-3'>
                                         Contacts
                                     </Button></MenuItem>
                             </Menu>
