@@ -1,0 +1,42 @@
+/* Card hover animation */
+.card-animation {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card-animation:hover {
+    transform: scale(1.1);
+    /* Enlarge card on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 109, 0, 0.7);
+    /* Add glow */
+}
+
+/* Button hover animation */
+button.MuiButton-contained {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button.MuiButton-contained:hover {
+    transform: scale(1.05);
+    /* Button enlarges slightly on hover */
+    background-color: #ff8e00;
+    /* Brighten button color on hover */
+}
+
+/* Background animation */
+.membership-background {
+    animation: slideBackground 15s ease-in-out infinite;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
