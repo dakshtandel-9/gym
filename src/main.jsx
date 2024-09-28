@@ -18,6 +18,7 @@ root.render(
       <Route path="/about" element={<Aboutpage />} />
       <Route path="/membership" element={<Membershippage />} />
     </Routes>
+    d
     <Footer />
   </BrowserRouter>
 );
